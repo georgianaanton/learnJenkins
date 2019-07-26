@@ -4,7 +4,7 @@ pipeline {
         stage('Example Build') {
             steps {
              	step{ git 'https://github.com/georgianaanton/learnJenkins'}
-             	step{ tool name: 'Maven', type: 'maven'
+             	step{ tool name: 'mvn_3', type: 'maven'
              			sh 'mvn clean compile package'
              	}
               
